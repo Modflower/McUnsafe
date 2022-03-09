@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "mcunsafe",
+  "version": "${version}",
+  "name": "McUnsafe",
+  "description": "Very Experimental Unsafe Mass Transformer",
+  "authors": [
+    "Ampflower"
+  ],
+  "contact": {
+    "sources": "https://github.com/Modflower/McUnsafe",
+    "issues": "https://github.com/Modflower/McUnsafe/issues",
+    "discord": "https://discord.gg/EmPS9y9"
+  },
+  "license": [
+    "MPL-2.0"
+  ],
+  "environment": "*",
+  "entrypoints": {
+    "gud_asm": [
+      "gay.ampflower.mcunsafe.asm.Asm"
+    ]
+  },
+  "depends": {
+    "gud_asm": "*"
+  }
+}

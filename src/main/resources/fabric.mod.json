@@ -21,7 +21,15 @@
       "gay.ampflower.mcunsafe.asm.Asm"
     ]
   },
+  "mixins": [
+    "mcunsafe.mixin.json"
+  ],
   "depends": {
     "gud_asm": "*"
+  },
+  "custom": {
+    "lithium:options": {
+      "mixin.alloc.nbt": false
+    }
   }
 }

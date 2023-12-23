@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "gay.ampflower.mcunsafe.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinNbtCompound"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "MixinModelLoader"
+  ]
+}

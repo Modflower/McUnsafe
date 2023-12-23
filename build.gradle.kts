@@ -39,7 +39,7 @@ dependencies {
     mappings("net.fabricmc", "yarn", yarnMappings, classifier = "v2")
     modImplementation("net.fabricmc", "fabric-loader", loaderVersion)
     // I'm sorry...
-    include(modImplementation("com.github.Modflower", "bytecode-junkie", "v0.3.1"))
+    include(modImplementation("com.github.Modflower", "bytecode-junkie", "v0.3.3"))
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }

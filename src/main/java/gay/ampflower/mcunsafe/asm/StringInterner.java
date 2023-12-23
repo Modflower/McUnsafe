@@ -11,6 +11,8 @@ import org.objectweb.asm.tree.*;
  * @since ${version}
  **/
 class StringInterner implements Transformer {
+    private static final boolean log = Boolean.getBoolean("mcunsafe.log.stringinterner");
+
     private static final Identifier identifier = new Identifier("mcunsafe", "string-interner");
 
     @Override
@@ -40,7 +42,7 @@ class StringInterner implements Transformer {
                 method.instructions.insertBefore(insn, il);
                 transformed = f = true;
             }
-            if (f)
+            if (f && log)
                 System.out.printf("MCU-SI: Successfully transformed %s/%s%s\n", classNode.name, method.name, method.desc);
         }
         if (transformed) {
